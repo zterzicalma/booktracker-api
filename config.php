@@ -1,5 +1,14 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_error', 1);
+
 $env = parse_ini_file(__DIR__ . '/.env');
+
+if (!$env){
+	echo json_encode(['error' => 'Failed to load .env']);
+	exit;
+}
 
 $host = $env['DB_HOST'];
 $db   = $env['DB_NAME'];
