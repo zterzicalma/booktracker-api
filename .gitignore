@@ -1,0 +1,13 @@
+# Ignore sensitive files
+.env
+
+# System/IDE files
+*.log
+*.bak
+*.tmp
+.DS_Store
+.vscode/
+.idea/
+
+# OS-specific
+Thumbs.db
